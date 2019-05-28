@@ -1,0 +1,23 @@
+{
+  "name": "midi-websocket",
+  "version": "0.1.0",
+  "description": "Relay MIDI messages to the browser (or any other websocket client) using Socket.io",
+  "main": "relay.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RandomStudio/midi-websocket.git"
+  },
+  "author": "Stephen Buchanan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RandomStudio/midi-websocket/issues"
+  },
+  "homepage": "https://github.com/RandomStudio/midi-websocket#readme",
+  "dependencies": {
+    "midi": "^0.9.5",
+    "socket.io": "^2.2.0"
+  }
+}
