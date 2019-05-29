@@ -18,6 +18,8 @@
   "homepage": "https://github.com/RandomStudio/midi-websocket#readme",
   "dependencies": {
     "midi": "^0.9.5",
+    "parse-strings-in-object": "^1.2.0",
+    "rc": "^1.2.8",
     "socket.io": "^2.2.0"
   }
 }
