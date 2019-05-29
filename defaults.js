@@ -3,7 +3,8 @@ module.exports = {
         port: 4000
     },
     midi: {
-        port: 0,
+        debug: false,
+        port: 1,
         name: null
     }
 }
