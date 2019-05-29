@@ -1,5 +1,6 @@
 module.exports = {
     websocket: {
+        debug: false,
         port: 4000
     },
     midi: {
