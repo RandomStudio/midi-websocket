@@ -4,13 +4,20 @@ const midi = require('midi');
 
 console.log('loaded Midi Websocket Relay with config', JSON.stringify(config));
 
-const input = new midi.input();
-const portCount = input.getPortCount();
 
-if (portCount === 0) {
-    console.error('no MIDI devices found!');
+
+
+const openDevice = ({ port, name }) => {
+    const input = new midi.input();
+    const portCount = input.getPortCount();
+    for (let i = 0; i < portCount; i++) {
+        const name = input.getPortName(i);
+        console.log(`found MIDI device at port #${i}: "${i}"`);
+        if (name === null) {
+    
+        }
+    }
+
 }
 
-for (let i = 0; i < portCount; i++) {
-    console.log('input #' + i + ': ' + input.getPortName(i));
-}
+const input = openDevice(config.midi);
